@@ -153,17 +153,7 @@ if style == "梵高":
             my_bar.progress(5 * (epoch + 1))
             show.image('output/{}.jpg'.format(epoch + 1))
 
-import streamlit as st
-import os
-from fastai.vision.all import *
-import numpy as np
-from PIL import Image, ImageOps, ImageFilter, ImageDraw, ImageFont
-from PIL import Image, ImageEnhance
-import tensorflow as tf
-import keras
-from keras.applications.vgg16 import VGG16
 
-model = VGG16(weights="imagenet")
 st.set_page_config(page_title="图像转换编辑器", page_icon=":eyeglasses:")
 st.title("图像分类转换器")
 
